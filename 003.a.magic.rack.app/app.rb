@@ -19,10 +19,10 @@ require 'twitter'
 
 TWITTER = Twitter::REST::Client.new do |config|
   # Go to https://dev.twitter.com/apps and create a new twitter application and generate these keys and tokens
-  config.consumer_key = "consumer key here"
-  config.consumer_secret = "consumer secret here"
-  config.access_token = "access token here"
-  config.access_token_secret = "token secret here"
+  config.consumer_key = "A0n1HuKewCoen1ZlgRickkykQ"
+  config.consumer_secret = "atkcWMewBEOLAoEyZ9QZ9QZK4e6qTI33MrM6OdvQzd9qQxZh1S"
+  config.access_token = "3161029745-Ive8QJRxxaLyAZC05c466hwufhA78KCbQXrLfPg"
+  config.access_token_secret = "692tagPG8c1hTLTFwsyCNHuVzg5M8PMNS8Njc54c2hGRq"
 end
 
 # What do you think is going on up there? Well the twitter gem gives us a class,
@@ -36,7 +36,7 @@ class App
     html = "<h1>What people are saying about Flatiron School</h1>"
     html << "<ul>"
 
-    # So far we've created an HTML string. Now the fun part. 
+    # So far we've created an HTML string. Now the fun part.
     # Let's search twitter.
     twitter_search_results = TWITTER.search("flatironschool")
     twitter_search_results.each do |tweet|
